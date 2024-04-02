@@ -20,5 +20,5 @@ std::string Token::string ()
 	std::string type = to_string(this->type);
 
 	// "Type:	Value"
-	return type + ":\t" + value;
+	return type + ":\t\"" + value + "\"";
 }
