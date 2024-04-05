@@ -1,3 +1,4 @@
+// #include <iostream>
 #include "string.h"
 
 bool ustr_find (std::string str, std::string substr)
@@ -5,8 +6,9 @@ bool ustr_find (std::string str, std::string substr)
 	int i = -1;
 	int len = substr.size();
 
-	while (str[i++])
+	while (str[++i])
 	{
+		// std::cout << str.substr(i, len) << "\n";
 		if (str.substr(i, len) == substr)
 		{
 			return true;
