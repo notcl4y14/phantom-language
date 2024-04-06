@@ -8,8 +8,6 @@ Token::Token (TokenType type, std::string value)
 	this->value = value;
 }
 
-Token::~Token () {}
-
 bool Token::matches (TokenType type, std::string value)
 {
 	return this->type == type && this->value == value;

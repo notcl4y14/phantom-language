@@ -23,7 +23,6 @@ public:
 	std::string value;
 
 	Token (TokenType type, std::string value);
-	~Token ();
 
 	bool matches (TokenType type, std::string value);
 	std::string string ();
